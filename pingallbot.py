@@ -23,7 +23,7 @@ chatQueue = []
 
 stopProcess = False
 
-@teletips.on_message(filters.command(["ping","all"]))
+@teletips.on_message(filters.command(["ping","all|@all"]))
 async def everyone(client, message):
   global stopProcess
   try: 
@@ -71,7 +71,7 @@ async def everyone(client, message):
                 await teletips.send_message(message.chat.id, text1)
               except Exception:
                 pass  
-              await asyncio.sleep(10) 
+              await asyncio.sleep(2) 
               i+=10
             except IndexError:
               try:
