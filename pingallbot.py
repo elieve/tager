@@ -71,7 +71,7 @@ async def everyone(client, message):
                 await teletips.send_message(message.chat.id, text1)
               except Exception:
                 pass  
-              await asyncio.sleep(2) 
+              await asyncio.sleep(1) 
               i+=10
             except IndexError:
               try:
