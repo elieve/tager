@@ -145,7 +145,7 @@ async def remove(client, message):
   except FloodWait as e:
     await asyncio.sleep(e.value)                               
         
-@teletips.on_message(filters.command(["stop","cancel"]))
+@teletips.on_message(filters.command(["cancel"]))
 async def stop(client, message):
   global stopProcess
   try:
