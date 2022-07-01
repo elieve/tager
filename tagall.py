@@ -133,5 +133,5 @@ Only admins can tag all.  here is a list of commands
 """
 
 print("PingAll is alive!")  
-Client.run()
+client.run()
 
