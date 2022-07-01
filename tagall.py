@@ -6,9 +6,9 @@ from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin
 from telethon.tl.types import ChannelParticipantCreator
 
-from telethon import TelegramClient as client
+from telethon import TelegramClient
 
-Client=TelegramClient(
+client=TelegramClient(
     "PingAllBot",
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
