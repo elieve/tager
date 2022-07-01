@@ -9,12 +9,14 @@ from telethon.tl.types import ChannelParticipantCreator
 
 from telethon import TelegramClient
 
-client=TelegramClient(
-    "PingAllBot",
+bot = TelegramClient(
+    'client',
     api_id = int(os.environ["API_ID"]),
     api_hash = os.environ["API_HASH"],
-    bot_token = os.environ["BOT_TOKEN"]
 )
+
+client = bot.start(bot_token = os.environ["BOT_TOKEN"])
+
 
 
 spam_chats = []
